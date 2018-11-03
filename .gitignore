@@ -1,7 +1,8 @@
-GeoSimilarity/.idea/
-GeoSimilarity/code/.cache/
-GeoSimilarity/code/.idea/
-GeoSimilarity/code/__init__.pyc
-GeoSimilarity/code/__pycache__/
-GeoSimilarity/code/inputs.pyc
-GeoSimilarity/code/nets.pyc
+.gitignore
+.idea/
+code/.cache/
+code/.idea/
+code/__init__.pyc
+code/__pycache__/
+code/inputs.pyc
+code/nets.pyc
