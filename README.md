@@ -1,3 +1,3 @@
-# adversarial-projects
+# GeoSimilarity
 
-Let's get it done
+Small project to create a similarity measure function using deep neural networks
