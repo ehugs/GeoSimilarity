@@ -1,8 +1,11 @@
 .gitignore
 .idea/
-code/.cache/
-code/.idea/
-code/__init__.pyc
-code/__pycache__/
-code/inputs.pyc
-code/nets.pyc
+src/.cache/
+src/.idea/
+src/__pycache__/
+src/*.pyc
+test/.cache/
+test/.idea/
+test/__pycache__/
+test/*.pyc
+*.pyc

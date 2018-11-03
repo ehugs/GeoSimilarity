@@ -1,6 +1,6 @@
 import tensorflow as tf
-import GeoSimilarity.nets as nets
-import GeoSimilarity.inputs as inputs
+import GeoSimilarity.src.nets as nets
+import GeoSimilarity.src.inputs as inputs
 
 
 class TestNets(tf.test.TestCase):
