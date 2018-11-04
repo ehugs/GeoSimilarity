@@ -26,6 +26,9 @@ flags.DEFINE_integer('batch_size', 2, 'The number of images in each batch.')
 flags.DEFINE_integer('grid_size', 1, 'Grid size to visualize generated and real images.')
 flags.DEFINE_string('model_type', 'late_fusion', 'Model type can be early_fusion or late_fusion .')
 
+
+flags.DEFINE_float('weight_decay_coeff', 0.00001, 'Weight decay coefficient.')
+
 # Model and dataset directories
 flags.DEFINE_string('train_log_dir',
                     '/home/hugs/Models/mymodel',
@@ -66,7 +69,7 @@ def main(_):
     model.build(img_a=input_a, img_b=input_b, labels=labels)
 
     # Define Loss
-    loss_fn = gloss.Loss(model=model)
+    loss_fn = gloss.Loss(model=model, weight_decay_coeff=FLAGS.weight_decay_coeff)
 
     # Get global step and the respective operation
     global_step_inc = utils.create_global_step()
