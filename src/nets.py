@@ -45,11 +45,11 @@ def conv2d_fixed_padding(inputs, filters, kernel_size, strides):
 
 
 def get_fnet_feature_map():
-    return [32, 64, 128, 256, 512]
+    return [32, 64, 128, 256]
 
 
 def get_dnet_feature_map():
-    return [1024]
+    return [512]
 
 
 class FeatureNet(object):
